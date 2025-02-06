@@ -1,0 +1,258 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Food Menu - City Campus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Inter:wght@400;700;900&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.2/handlebars.min.js"></script>
+
+<div class="top-container">
+  <div class="location-container">
+    <div class="location-header">
+      <div class="menu-type">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="40"
+          viewBox="0 0 38 50"
+          fill="none"
+          class="location-icon"
+        >
+          <path
+            d="M16.823 48.9912C2.63379 28.421 0 26.3099 0 18.75C0 8.39463 8.39463 0 18.75 0C29.1054 0 37.5 8.39463 37.5 18.75C37.5 26.3099 34.8662 28.421 20.6769 48.9912C19.7458 50.3363 17.7541 50.3362 16.823 48.9912ZM18.75 26.5625C23.0647 26.5625 26.5625 23.0647 26.5625 18.75C26.5625 14.4353 23.0647 10.9375 18.75 10.9375C14.4353 10.9375 10.9375 14.4353 10.9375 18.75C10.9375 23.0647 14.4353 26.5625 18.75 26.5625Z"
+            fill="#f7b32b"
+          ></path></svg
+        ><span class="location-text">Headingley Campus</span
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="23"
+          height="15"
+          viewBox="0 0 18 10"
+          fill="none"
+          class="location-arrow"
+        >
+          <path
+            d="M8.34867 9.73477L1.01526 2.40132C0.661579 2.04764 0.661579 1.47422 1.01526 1.12058L1.87059 0.265254C2.22367 -0.0878259 2.79591 -0.0885054 3.14982 0.263745L8.98906 6.07563L14.8283 0.263745C15.1822 -0.0885054 15.7544 -0.0878259 16.1075 0.265254L16.9628 1.12058C17.3165 1.47426 17.3165 2.04767 16.9628 2.40132L9.62945 9.73477C9.27576 10.0884 8.70235 10.0884 8.34867 9.73477Z"
+            fill="white"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <div class="location-dropdown">
+      <span class="location-switch-text"
+        ><a href="campusm://pocketguide?pg_code=417148">City Campus</a></span
+      >
+    </div>
+  </div>
+  <div class="header-image">
+    <div class="fried">
+      <img
+        src="https://portal.ombiel.co.uk/assets/LeedsBeckettUniversity/LeedsBeckett/FoodMenu/2024-25/Friedlogo-01.png"
+        alt="Fried"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="main-title">
+  <div class="title"></div>
+</div>
+
+<section class="menu-category">
+  <button class="collapsible">
+    <span class="menu-category-title">Meal Deals</span
+    ><span class="arrow">▼</span>
+  </button>
+  <div class="content">
+    <p class="menu-description">
+      <em>All served with Fries, Dip and 12oz Drink:</em>
+    </p>
+    <div class="menu-item">
+      <h4>Poppin' Chicken Snack Box - £3.00</h4>
+      <p>Poppin’ chicken pieces and fries</p>
+    </div>
+    <div class="menu-item">
+      <h4>Mini Fillet Snack Box - £3.00</h4>
+      <p>One mini fillet and fries</p>
+    </div>
+    <div class="menu-item">
+      <h4>Chicken Strip Meal - £5.50</h4>
+      <p>Three chicken strips, fries, regular drink and two dips</p>
+    </div>
+    <div class="menu-item">
+      <h4>Salt ‘n’ Pepper Chicken Strip Meal - £6.50</h4>
+      <p>Salt ‘n’ Pepper strips, fries, regular drink and two dips</p>
+    </div>
+    <div class="menu-item">
+      <h4>Chicken Fillet Burger Meal - £6.50</h4>
+      <p>Chicken Fillet Burger, fries, regular drink and two dips</p>
+    </div>
+    <div class="menu-item">
+      <h4>Spicy Chicken Fillet Burger Meal - £6.50</h4>
+      <p>Spicy Chicken Fillet Burger, fries, regular drink and two dips</p>
+    </div>
+  </div>
+</section>
+<section class="menu-category">
+  <button class="collapsible">
+    <span class="menu-category-title">Speciality Chicken</span
+    ><span class="arrow">▼</span>
+  </button>
+  <div class="content">
+    <div class="menu-item">
+      <h4>Salt ‘n’ Pepper Chicken Strips</h4>
+      <p><strong>£3.95</strong></p>
+    </div>
+    <div class="menu-item">
+      <h4>Saucy Chicken Bites</h4>
+      <p><strong>£3.99</strong></p>
+    </div>
+    <div class="menu-item">
+      <h4>Poppin’ Chicken</h4>
+      <p><strong>£3.75</strong></p>
+    </div>
+    <div class="menu-item">
+      <h4>Buffalo Chicken Wings</h4>
+      <p><strong>£3.99</strong></p>
+    </div>
+  </div>
+</section>
+<section class="menu-category">
+  <button class="collapsible">
+    <span class="menu-category-title">Sandwiches, Salads & Burgers</span
+    ><span class="arrow">▼</span>
+  </button>
+  <div class="content">
+    <div class="menu-item">
+      <h4>Chicken Fillet Burger - £3.65</h4>
+      <p>Crispy coated chicken fillet in a soft burger bun</p>
+    </div>
+    <div class="menu-item">
+      <h4>Spicy Chicken Fillet Burger - £3.65</h4>
+      <p>
+        Hot and spicy chicken in a crispy coating served in a soft burger bun
+      </p>
+    </div>
+    <div class="menu-item">
+      <h4>Chicken Wrap - £3.50</h4>
+      <p>Golden fried chicken strips in a soft torilla wrap</p>
+    </div>
+    <div class="menu-item">
+      <h4>Chicken Salad Bowl - £4.95</h4>
+      <p>Your choice of chicken fillet served with a fresh, crunchy salad</p>
+    </div>
+  </div>
+</section>
+<section class="menu-category">
+  <button class="collapsible">
+    <span class="menu-category-title">Sides</span><span class="arrow">▼</span>
+  </button>
+  <div class="content">
+    <div class="menu-item">
+      <h4>Regular Fries</h4>
+      <p><strong>£1.65</strong></p>
+    </div>
+    <div class="menu-item">
+      <h4>Large Fries</h4>
+      <p><strong>£1.85</strong></p>
+    </div>
+    <div class="menu-item">
+      <h4>Baked Beans</h4>
+      <p><strong>£0.85</strong></p>
+    </div>
+    <div class="menu-item">
+      <h4>Coleslaw</h4>
+      <p><strong>£0.85</strong></p>
+    </div>
+    <div class="menu-item">
+      <h4>Corn on the Cob</h4>
+      <p><strong>£1.00</strong></p>
+    </div>
+    <div class="menu-item">
+      <h4>Gravy</h4>
+      <p><strong>£0.80</strong></p>
+    </div>
+    <div class="menu-item">
+      <h4>Dips</h4>
+      <p><strong>£0.30</strong></p>
+    </div>
+  </div>
+</section>
+<footer class="bottom-container">
+  <a href="https://www.leedsbeckett.ac.uk/beckettfood/rewards/" target="_blank"
+    ><img
+      src="https://portal.ombiel.co.uk/assets/LeedsBeckettUniversity/LeedsBeckett/FoodMenu/2024-25/UpayaPP-10.png"
+      alt="Rewards" /></a
+  ><span class="tnc">
+    Food Allergies & Intolerances -<br />
+    Before you order your food and drinks please ask a member of staff if you
+    would like to know about our ingredients.
+  </span>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // --- 1. Delegated event listener for collapsible accordions ---
+    // This will catch clicks on any element with class "collapsible"
+    $(document).on("click", ".collapsible", function () {
+      // Close all other open accordions
+      $(".collapsible")
+        .not(this)
+        .each(function () {
+          $(this).removeClass("active");
+          $(this).next(".content").css("max-height", "");
+        });
+
+      // Toggle the clicked accordion
+      $(this).toggleClass("active");
+      var content = $(this).next(".content");
+      if (
+        content.css("max-height") !== "0px" &&
+        content.css("max-height") !== "none"
+      ) {
+        content.css("max-height", "");
+      } else {
+        content.css("max-height", content[0].scrollHeight + "px");
+      }
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Existing listener for the location container toggling
+    var locationContainer = document.querySelector(".location-container");
+    var locationHeader = locationContainer.querySelector(".location-header");
+
+    locationHeader.addEventListener("click", function (e) {
+      // Prevent the document click event from immediately closing the dropdown
+      e.stopPropagation();
+      // Toggle the active state
+      locationContainer.classList.toggle("active");
+      var dropdown = locationContainer.querySelector(".location-dropdown");
+      if (dropdown.style.maxHeight && dropdown.style.maxHeight !== "0px") {
+        dropdown.style.maxHeight = null;
+      } else {
+        dropdown.style.maxHeight = dropdown.scrollHeight + "px";
+      }
+    });
+
+    // Listen for clicks anywhere in the document.
+    document.addEventListener("click", function (e) {
+      // If the click target is not within the location container,
+      // then close the dropdown.
+      if (!locationContainer.contains(e.target)) {
+        locationContainer.classList.remove("active");
+        var dropdown = locationContainer.querySelector(".location-dropdown");
+        if (dropdown) {
+          dropdown.style.maxHeight = null;
+        }
+      }
+    });
+  });
+</script>

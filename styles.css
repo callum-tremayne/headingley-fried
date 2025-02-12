@@ -26,64 +26,37 @@ body {
   position: relative;
 }
 
-.location-container {
-  display: inline-block;
-  position: relative;
-  margin-left: 20px;
+.back-container {
+  margin-left: 10px;
 }
 
-.location-header {
-  display: inline-flex;
+.back {
+  display: flex;
   align-items: center;
-  gap: 8px;
-  cursor: pointer;
-}
-
-.location-text {
-  font-family: "Inter", sans-serif;
+  color: white;
   font-size: 20px;
   font-weight: 900;
-  color: #fff;
 }
 
-.location-switch-text {
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  font-weight: 900;
-  color: #fff;
-  padding-left: 36px;
-  cursor: pointer;
+#polyline {
+  fill: none;
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 48px;
 }
 
-.location-arrow {
-  font-size: 18px;
-  transition: transform 0.3s ease;
-  transform: rotate(0deg);
-  margin-bottom: 5px;
-  undefined: undefined;
-}
-
-.location-container.active .location-arrow {
-  transform: rotate(180deg);
-}
-
-.location-dropdown {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease;
-  background-color: #d3472f;
-  border-radius: 0 0 10px 10px;
-  padding-top: 10px;
+#line {
+  fill: none;
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 48px;
 }
 
 a {
   text-decoration: none;
   color: #fff;
-}
-
-.location-container.active .location-dropdown {
-  max-height: 100px;
-  undefined: undefined;
 }
 
 .header-image {
@@ -109,28 +82,7 @@ a {
   width: auto;
 }
 
-.menu-type {
-  width: auto;
-  height: 60px;
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  font-weight: 900;
-  display: inline-flex;
-  justify-content: center;
-  align-items: flex-end;
-  white-space: nowrap;
-  gap: 8px;
-}
-
 .main-title {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.main-day-title {
   width: 100%;
   display: flex;
   align-items: center;
@@ -208,21 +160,10 @@ a {
   color: #333;
 }
 
-.menu-item {
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.menu-item:last-child {
-  border-bottom: none;
-  padding-bottom: 20px;
-}
-
 .menu-item h4 {
   margin: 0;
   font-size: 16px;
   color: #d3472f;
-
   font-weight: bold;
 }
 
@@ -263,13 +204,23 @@ a {
   text-align: center;
 }
 
+#iaarobf {
+  display: none;
+}
+
+.menu-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+  padding-bottom: 20px;
+}
+
 @media (max-width: 400px) {
   .menu-category {
     width: 100%;
-  }
-
-  .top-container {
-    padding: 15px;
   }
 
   .tnc {
